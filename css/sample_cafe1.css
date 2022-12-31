@@ -131,6 +131,11 @@ a {
 }
 
 /* --#menu------------------ */
+#menu {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 #menu .drink,
 #menu .sweets,
 #menu .food {
