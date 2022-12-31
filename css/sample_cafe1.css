@@ -1,0 +1,503 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #050507;
+  font-size: 1rem;
+  /*font-family: Zen Kurenaido;*/
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #050507;
+  text-decoration: none;
+}
+
+.container {
+  margin: 30px;
+}
+
+.section-title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* --#header----------------------- */
+#header {
+  width: 100%;
+  /* height: 100vh; ではiOSの場合 高さいっぱいに表示されない為 min-height: 100vh; と記述*/
+  min-height: 100vh;
+  background-image: url(../img/sample_cafe1_mainvisual_pexels-haley-black-3968056.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px;
+  position: relative;
+}
+
+#header nav .menu {
+  display: flex;
+  
+}
+
+#header nav .menu li {
+  margin-left: 30px;
+}
+
+#header nav .menu li a {
+  color: #fff;
+  font-weight: 700;
+  /* x, y, ぼかし, color */
+  filter: drop-shadow(1px 1px 2px #121212);
+  font-size: 20px;
+}
+
+#header nav .menu li a:hover {
+  font-size: 30px;
+}
+
+#header .cafe-name {
+  color: #fff;
+  filter: drop-shadow(1px 1px 2px #121212);
+  font-size: 100px;
+  position: absolute;
+  top: 70px;
+}
+
+#header p {
+  color: #fff;
+  filter: drop-shadow(1px 1px 2px #121212);
+  position: absolute;
+  top: 220px;
+  margin-left: 30px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#header p:hover {
+  font-size: 30px;
+}
+
+/* --#message------------------- */
+#message {
+  margin-bottom: 50px;
+}
+
+#message .pc p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#message .sp p {
+  display: none;
+}
+
+#message .sns {
+  display: flex;
+  justify-content: center;
+}
+
+#message .owner {
+  padding: 12px 16px 0 0;
+  width: 550px;
+  height: 500px;
+}
+
+#message .owner img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 40px;
+  object-fit: cover;
+  /* 中央下でトリミング */
+  object-position: 50% 100%;
+}
+
+#message .twitter-tweet {
+  width: 50%;
+}
+
+/* --#menu------------------ */
+#menu .drink,
+#menu .sweets,
+#menu .food {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+#menu .drink {
+  margin-top: 50px;
+}
+
+#menu .menu-img {
+  height: 580px;
+  margin: 0 auto;
+}
+
+#menu img {
+  height: 100%;
+  width: 100%;
+}
+
+#menu dl {
+  width: 50%;
+  font-size: 1.25rem;
+  margin: 0 auto;
+}
+
+#menu dl a {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#menu dl a:hover {
+  font-weight: bold;
+}
+
+#menu dl a:last-child {
+  margin-bottom: 0;
+}
+
+#menu dt {
+  width: 80%;
+}
+
+#menu dd {
+  width: 20%;
+  text-align: right;
+}
+
+/* --#address----------------------- */
+#address {
+  margin-bottom: 50px;
+}
+
+#address .map {
+  width: 100%;
+}
+
+#address .address {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* --#to-top----------------------- */
+#to-top {
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border: solid 4px rgb(244, 177, 131);
+  border-radius: 50%;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  color: rgb(244, 177, 131);
+}
+
+#to-top::after {
+  content: "";
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 21px solid rgb(244, 177, 131);
+  position: relative;
+  left: 17px;
+  bottom: 6px;
+  z-index: 10;
+}
+
+/* --#footer----------------------- */
+#footer .copyright {
+  text-align: center;
+}
+
+
+
+
+
+
+
+/*-----------------------------------*/
+
+/* sample_cafe1_menu_click.html */
+
+#menu_click_header {
+  margin: 60px 0 60px 60px;
+  max-width: 1120px;
+}
+
+.menu_click_container {
+  padding: 15px;
+  border: solid 5px rgb(251, 229, 214);
+  border-radius: 60px;
+  max-width: 1120px;
+}
+
+.menu_click_flex {
+  display: flex;
+}
+
+.menu_click_img {
+  width: 50%;
+}
+
+.menu_click_text {
+  width: 500px;
+  margin-left: 30px;
+}
+
+.menu_click_img_photo {
+  background-color: rgb(251, 229, 214);
+  width: 500px;
+  height: 500px;
+  border-radius: 10%;
+  position: relative;
+}
+
+.menu_click_img_photo p {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  color: #050507;
+  font-size: 1.725rem;
+}
+
+.menu_click_menu_name {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.menu_click_text p {
+  font-size: 1.25rem;
+  line-height: 2;
+}
+
+.menu_click_footer {
+  max-width: 1120px;
+}
+
+
+
+
+
+
+/*-----------------------------------*/
+
+/* レスポンシブ 中 */
+
+@media screen and (max-width: 1050px) {
+  /* --レスポンシブ 中 #menu------ */
+  #message .pc p {
+    font-size: 1rem;
+  }
+
+  #menu dl {
+    font-size: 1.1rem;
+  }
+
+  #address .address {
+    font-size: 1.25rem;
+  }
+}
+
+
+
+
+
+
+
+
+/*-----------------------------------*/
+  /* レスポンシブ sample_cafe1_menu_click.html */
+@media screen and (max-width: 1100px) {
+  #menu_click_header {
+    margin: 20px 0 20px 20px;
+    max-width: 650px;
+  }
+
+  .menu_click_container {
+    max-width: 650px;
+  }
+
+  .menu_click_flex {
+    flex-direction: column;
+  }
+
+  .menu_click_text {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .menu_click_img {
+    width: 100%;
+  }
+
+  .menu_click_img_photo {
+    width: 100%;
+  }
+
+  .menu_click_img_photo p {
+    top: 30px;
+    left: 30px;
+    font-size: 1.5rem;
+  }
+
+  .menu_click_menu_name {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+
+  .menu_click_footer {
+    max-width: 650px;
+  }
+}
+
+
+
+
+
+/* レスポンシブ 小 */
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 10px;
+  }
+
+  .section-title {
+    font-size: 25px;
+  }
+
+  /* --レスポンシブ 小 #header----- */
+  #header {
+    padding: 15px;
+  }
+
+  #header nav .menu li {
+    margin: 20px 0 0 15px;
+  }
+
+  #header nav .menu li a {
+    text-decoration: underline;
+    font-size: 1rem;
+  }
+
+  #header nav .menu li a:hover {
+    font-size: 1rem;
+  }
+
+  #header .cafe-name {
+    font-size: 50px;
+    font-weight: normal;
+  }
+
+  #header p {
+    top: 150px;
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+
+  #header p:hover {
+    font-size: 1rem;
+  }
+
+  /* --レスポンシブ 小 #message----- */
+  #message .pc p {
+    display: none;
+  }
+
+  #message .sp p {
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  #message .sns {
+    flex-direction: column;
+  }
+
+  #message .owner {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* --レスポンシブ 小 #menu------- */
+  #menu .drink,
+  #menu .sweets,
+  #menu .food {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  #menu dl {
+    font-size: 0.825rem;
+    width: 100%;
+    margin-bottom: 50px;
+    padding-left: 10px;
+  }
+
+  #menu dl a {
+   margin-bottom: 10px;
+   position: relative;
+  }
+
+  #menu dl a:hover {
+    font-weight: normal;
+  }
+
+  #menu dl a::before {
+    content: "";
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-left: 4px solid rgb(244, 177, 131);
+    position: absolute;
+    top: 7px;
+    left: -8px;
+  }
+
+  #menu .sweets {
+    flex-direction: column-reverse;
+  }
+
+  /* --レスポンシブ 小 #address---- */
+  #address .address {
+    font-size: 1rem;
+  }
+
+  #to-top {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: solid 2px rgb(244, 177, 131);
+    border-radius: 50%;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    color: rgb(244, 177, 131);
+  }
+  
+  #to-top::after {
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid rgb(244, 177, 131);
+    position: relative;
+    left: 8px;
+    bottom: 14px;
+  }
+
+}

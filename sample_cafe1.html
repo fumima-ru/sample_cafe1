@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>sample_cafe1</title>
+    <meta name="description" content="カフェのホームページサンプルです">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png" sizes="180x180">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!--Google Fonts設定 -->
+    <!--<link rel=link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">-->
+
+    <!--Google Fonts設定 Zen Kurenaido-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+
+    <!--Font Awesome読み込み-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!--css読み込み-->
+    <link rel="stylesheet" href="css/sample_cafe1.css">
+    <!--＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿-->
+    <!--Google の CDNを使用-->
+    <!--(CDNを経由する方法であればjQueryをダウンロードする必要がない)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--jsファイル読み込み--（すべてのjsファイルを読み込む書いた順に実行される意識を持つこと）-->  
+    <script src="js/sample_cafe1.js" defer></script>
+  </head>
+
+  <body>
+    <!--#header-------------------------->
+    <header id="header">
+      <nav>
+        <ul class="menu">
+          <li><a href="#message">メッセージ</a></li>
+          <li><a href="#menu">メニュー</a></li>
+        </ul>
+      </nav>
+      
+      <h1 class="cafe-name">Cofe 〇〇</h1>
+
+      <a href="#address">
+        <p class="header-address">
+          〇〇県〇〇市〇〇1-1-1<br>
+          tel:11-1111-1111
+        </p>
+      </a>
+    </header>
+
+    <!--.container----------------------->
+    <div class="container">
+      <!--main----------------------------->
+      <main>
+        <section id="message">
+          <div class="section-title">ようこそ Cofe 〇〇へ</div>
+          <div class="pc">
+            <p >こんにちは Cofe 〇〇です。〇〇〇〇年に ここ〇〇市にオープンしました。</p>
+            <p>オープン当初から変わらぬ定番メニューに加え</p>
+            <p>新しい物好きの店主が流行を取り入れた</p>
+            <p>こだわりのメニューに日々チャレンジしています。</p>
+          </div>
+
+          <div class="sp">
+            <p>こんにちは Cofe 〇〇です。</p>
+            <p>〇〇〇〇年に</p>
+            <p>ここ〇〇市にオープンしました。</p>
+            <p>オープン当初から変わらぬ</p>
+            <p>定番メニューに加え</p>
+            <p>新しい物好きの店主が</p>
+            <p>流行を取り入れた</p>
+            <p>こだわりのメニューに</p>
+            <p>日々チャレンジしています。</p>
+          </div>
+
+          <div class="sns">
+            <div class="owner">
+              <img src="img/sample_ cafe1_ owner_pexels-tim-douglas-6205451.jpg" alt="owner">
+            </div>
+            
+
+            <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">カフェ 〇〇です<br>本日のランチは<br>【オリジナルスパイスカレー】<br>スパイスの効いたスープも<br>セットでどうぞ🎵<br>段々と寒くなってきましたね<br>ぜひスパイスチャージしに<br>ご来店ください✨<a href="https://twitter.com/hashtag/%E3%82%AB%E3%83%95%E3%82%A7?src=hash&amp;ref_src=twsrc%5Etfw">#カフェ</a><a href="https://twitter.com/hashtag/%E3%83%A9%E3%83%B3%E3%83%81?src=hash&amp;ref_src=twsrc%5Etfw">#ランチ</a><a href="https://twitter.com/hashtag/%E3%82%B9%E3%83%91%E3%82%A4%E3%82%B9%E3%82%AB%E3%83%AC%E3%83%BC?src=hash&amp;ref_src=twsrc%5Etfw">#スパイスカレー</a></p>&mdash; fumima_ru_pg (@fumima_ru_pg) <a href="https://twitter.com/fumima_ru_pg/status/1580813588956344321?ref_src=twsrc%5Etfw">October 14, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </section>
+
+        <section id="menu">
+          <div class="section-title">メニュー</div>
+          <div class="menu">
+            <div class="drink">
+              <dl>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>コーヒー(H / I)</dt>
+                  <dd>&yen;500</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>カフェラテ(H / I)</dt>
+                  <dd>&yen;550</dd>
+                </a>
+                <!--<a href="sample_cafe1_menu_click.html">
+                  <dt>カフェモカ(H / I)</dt>
+                  <dd>&yen;550</dd>-->
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>紅茶(H / I)</dt>
+                  <dd>&yen;530</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>ティーソーダ</dt>
+                  <dd>&yen;530</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>ジャスミンアールグレイ(H / I)</dt>
+                  <dd>&yen;570</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>スパイスチャイ(H / I)</dt>
+                  <dd>&yen;570</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>黒胡麻きなこチャイ(H / I)</dt>
+                  <dd>&yen;570</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>赤しそソーダ( I )</dt>
+                  <dd>&yen;570</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>自家製ジンジャーエール( I )</dt>
+                  <dd>&yen;600</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>シナモンミルクティー(H / I)</dt>
+                  <dd>&yen;650</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>チョコミントミルクティー(H / I)</dt>
+                  <dd>&yen;650</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>季節のスムージー( I )</dt>
+                  <dd>&yen;680</dd>
+                </a>
+              </dl>
+
+              <div class="menu-img">
+                <img src="img/sample_cafe1_ drink _pexels-charlotte-may-5946623.jpg" alt="drink">
+              </div>
+            </div>
+            
+            <div class="sweets">
+              <div class="menu-img">
+                <img src="img/sample_ cafe1_ sweets_pexels-photo-8143761.jpg" alt="sweets">
+              </div>
+
+              <dl>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>シナモンロール</dt>
+                  <dd>&yen;350</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>フルーツパウンドケーキ</dt>
+                  <dd>&yen;450</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>自家製プリン</dt>
+                  <dd>&yen;500</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>とろーりチーズケーキ</dt>
+                  <dd>&yen;530</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>フルーツとまとゼリー</dt>
+                  <dd>&yen;530</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>シナモンバナナ蜂蜜トースト</dt>
+                  <dd>&yen;550</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>チョコミントパフェ</dt>
+                  <dd>&yen;730</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>柚子とチーズのパフェ</dt>
+                  <dd>&yen;730</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>蜂蜜パンケーキ</dt>
+                  <dd>&yen;750</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>チョコとナッツのパンケーキ</dt>
+                  <dd>&yen;780</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>サーモンとクリームチーズのパンケーキ</dt>
+                  <dd>&yen;850</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>季節のフルーツパンケーキ</dt>
+                  <dd>&yen;900</dd>
+                </a>
+              </dl>
+            </div>
+
+            <div class="food">
+              <dl>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>週替わりプレート</dt>
+                  <dd>&yen;680</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">                
+                  <dt>柿とモッツアレラチーズと生ハムのサラダ</dt>
+                  <dd>&yen;780</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>サーモンとグレープフルーツのサラダ</dt>
+                  <dd>&yen;780</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>ヤンニョムチキン</dt>
+                  <dd>&yen;600</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>名古屋コーチンのピラフ</dt>
+                  <dd>&yen;800</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>自家製ミートソースドリア</dt>
+                  <dd>&yen;800</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>ヤリイカと明太子のクリームドリア</dt>
+                  <dd>&yen;850</dd>
+                </a>
+                  <a href="sample_cafe1_menu_click.html">
+                  <!--じゃがいもとアンチョビを重ねてグラタン仕立てにしたスウェーデンの郷土料理 じゃがいもとアンチョビのクリーミーグラタン-->
+                  <dt>ヤンソンさんの誘惑</dt>
+                  <dd>&yen;777</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>ピッツア・マルゲリータ</dt>
+                  <dd>&yen;800</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>季節のピッツア</dt>
+                  <dd>&yen;900</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>朝採りハーブのスパイスパスタ</dt>
+                  <dd>&yen;880</dd>
+                </a>
+                <a href="sample_cafe1_menu_click.html">
+                  <dt>たっぷり雲丹のクリームパスタ</dt>
+                  <dd>&yen;1000</dd>
+                </a>
+              </dl>
+
+              <div class="menu-img">
+                <img src="img/sample_ cafe1_food _pexels-alesia-kozik-6066052.jpg" alt="food">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="address">
+          <!--<div class="section-title">お店の場所</div>-->
+          <div class="map">
+            <img src="img/sample_cafe1_map_2022-10-17 222150.png" alt="map">
+          </div>
+
+          <div class="address">
+            <p>〇〇県〇〇市〇〇1-1-1</p>
+            <p>tel:11-1111-1111</p>
+            <p>open 10:00am～22:00pm(定休:毎週月曜日)</p>
+          </div>
+        </section>
+
+      </main>
+
+      <!--#to-top-->
+      <a id="to-top" href="#"></a>
+      
+      <!--#footer-------------------------->
+      <footer id="footer" class="wrapper">
+        <p class="copyright">&copy; fumima-ru</p>
+      </footer>
+    </div>
+  </body>
+</html>
+<!--右下にtopボタン作る-->
+<!--jqueryを書く-->
